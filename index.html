@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Police texte -------------------------------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bouton retour librairy -------------------------------------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link style -------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="./sass/css/style.css" />
+    <link rel="stylesheet" href="./sass/css/animfontecran.css" />
+    <link rel="stylesheet" href="./sass/css/apropos.css" />
+    <link rel="stylesheet" href="./sass/css/competence.css" />
+    <link rel="stylesheet" href="./sass/css/infos.css" />
+    <link rel="stylesheet" href="./sass/css/parcours.css" />
+    <link rel="stylesheet" href="./sass/css/loisirs.css" />
+    <link rel="stylesheet" href="./sass/css/experience.css" />
+
+    <title>Curriculum Vitae</title>
+  </head>
+  <body>
+    <!-- acceuil ----------------------------------------------------------------------------------- -->
+    <section>
+      <div class="glowing">
+        <span style="--i: 1"></span>
+        <span style="--i: 2"></span>
+        <span style="--i: 3"></span>
+        <span style="--i: 4"></span>
+      </div>
+      <div class="glowing">
+        <span style="--i: 1"></span>
+        <span style="--i: 2"></span>
+        <span style="--i: 3"></span>
+        <span style="--i: 4"></span>
+      </div>
+    </section>
+    <!-- Présentation ----------------------------------------------------------------------------------- -->
+    <div class="presentation">
+      <h1>Concepteur développeur d'applications</h1>
+      <!-- <h2>BARATTE BELINE</h2> -->
+      <div id="drag">
+        <div id="carouselImage">
+          <img src="./img/triangle1.png" alt="" />
+        </div>
+        <div id="spin">
+          <p onclick="aPropos()">A propos</p>
+          <p onclick="competence()">Compétences</p>
+          <p onclick="parcours()">Parcours</p>
+          <!-- <p><a href="./experiences.html">Expériences</a></p> -->
+          <p onclick="experiences()">Expériences</p>
+          <p onclick="loisirs()">Loisirs</p>
+          <p onclick="infos()">Infos</p>
+        </div>
+        <div id="ground"></div>
+      </div>
+      <h2>BARATTE BELINE</h2>
+    </div>
+    <!-- a propos ----------------------------------------------------------------------------------- -->
+    <section id="aPropos">
+      <article class="container">
+        <div class="btn">
+          <button
+            class="btnRetour imagemouv"
+            onclick="accueil()"
+            data-speed="5"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+        </div>
+        <p id="texte" class="imagemouv" data-speed="3">
+          Voilà 4 ans que je suis passionnée par le développement.<br /><br />
+          J'ai commencé mon apprentissage en autodidacte. Après deux années de
+          travail personnel, j’ai pu intégrer un Escape Game. Il s’agira de ma
+          première expérience professionnelle dans le domaine et elle sera très
+          enrichissante.
+          <br />
+          <br />
+          Actuellement j’effectue une formation qualifiante intitulée «
+          Concepteur Développeur D’Application ». Je souhaite valider mes
+          acquis, renforcer mes connaissances et évoluer dans ce secteur
+          d’activité.
+        </p>
+      </article>
+    </section>
+    <!-- Compétences ----------------------------------------------------------------------------------- -->
+    <section id="competence">
+      <article class="container">
+        <div class="btn">
+          <button
+            class="btnRetour imagemouv"
+            onclick="accueil()"
+            data-speed="5"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+        </div>
+        <section class="cont imagemouv" data-speed="3">
+          <h2 class="imagemouv" data-speed="4">Logiciels</h2>
+          <article class="bar">
+            <aside class="bar-stat">
+              <p class="bar-text" id="vsc">Visual studio code - 80%</p>
+            </aside>
+          </article>
+          <!-- <article class="bar">
+            <aside class="bar-stat">
+              <p class="bar-text" id="as">android studio - 80%</p>
+            </aside>
+          </article> -->
+          <article class="bar">
+            <aside class="bar-stat">
+              <p class="bar-text" id="in">Intelliji / Eclipse - 80%</p>
+            </aside>
+          </article>
+          <!-- <article class="bar">
+            <aside class="bar-stat">
+              <p class="bar-text" id="ec">Eclipse - 80%</p>
+            </aside>
+          </article>-->
+          <article class="bar">
+            <aside class="bar-stat">
+              <p class="bar-text" id="db">DBeaver / MariaDB - 80%</p>
+            </aside>
+          </article>
+        </section>
+        <section class="cont imagemouv" data-speed="3">
+          <h2 class="imagemouv" data-speed="4">Langages</h2>
+          <article class="bar">
+            <aside class="bar-stat">
+              <p class="bar-text" id="html">HTML / CSS - 70%</p>
+            </aside>
+          </article>
+          <!-- <article class="bar">
+            <aside class="bar-stat">
+              <p class="bar-text" id="css">CSS - 80%</p>
+            </aside>
+          </article> -->
+          <article class="bar">
+            <aside class="bar-stat">
+              <p class="bar-text" id="js">Javascript - 60%</p>
+            </aside>
+          </article>
+          <article class="bar">
+            <aside class="bar-stat">
+              <p class="bar-text" id="ja">Java - 60%</p>
+            </aside>
+          </article>
+          <article class="bar">
+            <aside class="bar-stat">
+              <p class="bar-text" id="sql">SQL - 60%</p>
+            </aside>
+          </article>
+        </section>
+      </article>
+    </section>
+    <!-- Parcours ----------------------------------------------------------------------------------- -->
+    <section id="parcours">
+      <article class="container">
+        <div class="btn">
+          <button
+            class="btnRetour imagemouv"
+            onclick="accueil()"
+            data-speed="5"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+        </div>
+        <div class="texte">
+          <h6 class="imagemouv" data-speed="3">
+            2022 - 2023<br />
+            Formation Concepteur<br />
+            développeur d'application<br />
+            chez PopSchool<br />
+            a LILLE
+          </h6>
+          <h6 class="imagemouv" data-speed="4">
+            2020<br />
+            Formation domotique<br />
+            au centre de JEEDOM <br />
+            a LYON
+          </h6>
+          <h6 class="imagemouv" data-speed="3">
+            2005 - 2006<br />
+            1er BAC STI<br />
+            Lycée Gustave Eiffel<br />
+            a ARMENTIERES
+          </h6>
+        </div>
+      </article>
+    </section>
+    <!-- Expériences ----------------------------------------------------------------------------------- -->
+    <section id="experiences">
+      <article class="container">
+        <div class="btn">
+          <button
+            class="btnRetour imagemouv"
+            onclick="accueil()"
+            data-speed="5"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+        </div>
+        <div class="salle imagemouv" data-speed="3">
+          <h2>IKEA</h2>
+          <div class="image">
+            <img src="./img/AppIkea/Accueil.jpg" alt="">
+            <img src="./img/AppIkea/enigme.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Cible:
+              <p>Employés de Ikéa de Henin-Beaumont</p>
+            </h3>
+              </br>
+             <h3>Evenement:
+              <p>Soirée organisée dans leurs
+                  locaux</p>
+            </h3>
+            </br>
+             <h3>But:
+              <p>Résolution d'énigmes par équipe.
+                  Les plus rapides gagnent un prix</p>
+            </h3>
+            </br>
+             <h3>Technique:
+              <p>Création de l'application,
+                  mise en place des énigmes et des équipes</p>
+            </h3>
+            </br>
+          </div>
+        </div >
+        <div class="salle imagemouv" data-speed="2">
+          <h2>Escape pour l'emplois</h2>
+          <div class="image">
+            <img src="./img/AppEmplois/Acceuil.jpg" alt="">
+            <img src="./img/AppEmplois/enigme.jpg" alt="">
+            <img src="./img/AppEmplois/enigme1.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Cible:
+              <p>Chercheurs d'emplois</p>
+            </h3>
+              </br>
+             <h3>Evenement:
+              <p>Salon pour l'emploi</p>
+            </h3>
+            </br>
+             <h3>But:
+              <p>Selon le temps passé à résoudre
+                  chaque énigmes, il y avait un pourcentage de réussite pour
+                  pouvoir se diriger vers le pôle de métier approprié</p>
+            </h3>
+            </br>
+             <h3>Technique:
+              <p>Création de l'application,
+                  mise en place des énigmes</p>
+            </h3>
+            </br>
+          </div>
+        </div>
+        <div class="salle imagemouv" data-speed="3">
+          <h2>Soirée Hors Contrôle</h2>
+          <div class="image">
+            <img class="imageSalle" src="./img/AppSalle/accueil.png" alt="">
+            <img class="imageSalle" src="./img/AppSalle/loto.png" alt="">
+            <img class="imageSalle" src="./img/AppSalle/soushi1.png" alt="">
+            <img class="imageSalle" src="./img/AppSalle/tel.png" alt="">
+          </div>
+          <div class="text">
+            <h3>Cible:
+              <p>Tous publics</p>
+            </h3>
+              </br>
+             <h3>Evenement:
+              <p>Soirée organisée dans leurs
+                  locaux</p>
+            </h3>
+            </br>
+             <h3>But:
+              <p> Réussir à sortir de la salle en moins de 1H</p>
+            </h3>
+            </br>
+             <h3>Technique:
+              <p>Création de l'application</p>
+            </h3>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- Loisirs ----------------------------------------------------------------------------------- -->
+    <section id="loisirs">
+      <article class="container">
+        <div class="btn">
+          <button
+            class="btnRetour imagemouv"
+            onclick="accueil()"
+            data-speed="5"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+        </div>
+        <div id="icons">
+          <div class="icon imagemouv" data-speed="3">
+            <img
+                src="https://api.iconify.design/ph:game-controller-fill.svg?color=%23ffffff"
+                alt=""
+              />
+              <h6>Jeu Vidéo</h6>
+          </div>
+           <div class="icon imagemouv" data-speed="2">
+             <img
+                src="https://api.iconify.design/fa6-solid:mountain-sun.svg?color=%23ffffff"
+                alt=""
+              />
+              <h6>Escalade</h6>
+          </div>
+          <div class="icon imagemouv" data-speed="3">
+             <img
+                src="https://api.iconify.design/iconoir:cinema-old.svg?color=%23ffffff"
+                alt=""
+              />
+              <h6>Cinéma</h6>
+          </div>
+          <div class="icon imagemouv" data-speed="2">
+             <img
+                src="https://api.iconify.design/typcn:device-desktop.svg?color=%23ffffff"
+                alt=""
+              />
+              <h6>Informatique</h6>
+          </div>
+          <div class="icon imagemouv" data-speed="3">
+             <img
+                src="https://api.iconify.design/material-symbols:sound-detection-dog-barking.svg?color=%23ffffff"
+                alt=""
+              />
+              <h6>Animaux</h6>
+          </div>
+      </article>
+    </section>
+    <!-- Infos ----------------------------------------------------------------------------------- -->
+    <section id="infos">
+      <article class="container">
+        <div class="btn">
+          <button
+            class="btnRetour imagemouv"
+            onclick="accueil()"
+            data-speed="5"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+        </div>
+        <div id="icons">
+          <div class="icon imagemouv" data-speed="3">
+            <img
+              src="https://api.iconify.design/bi:telephone-fill.svg?color=%23ffffff"
+              alt=""
+            />
+            <h6>06 85 42 43 16</h6>
+          </div>
+          <div class="icon imagemouv" data-speed="4">
+            <img
+              src="https://api.iconify.design/material-symbols:alternate-email.svg?color=%23ffffff"
+              alt=""
+            />
+            <h6><a href="mailto:bb_327@hotmail.com">bb_327@hotmail.com</a></h6>
+          </div>
+          <div class="icon imagemouv" data-speed="3">
+            <img
+              src="https://api.iconify.design/entypo:address.svg?color=%23ffffff"
+              alt=""
+            />
+            <h6>62141 Evin-Malmaison</h6>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- link Javascript ---------------------------------------------------------------------- -->
+    <script src="./js/script.js"></script>
+    <script src="./js/animeCarousel.js"></script>
+    <script src="./js/parallax.js"></script>
+  </body>
+</html>

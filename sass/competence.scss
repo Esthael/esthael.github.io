@@ -1,0 +1,214 @@
+#competence {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  .container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .btn {
+      width: 100%;
+      .btnRetour {
+        cursor: pointer;
+        font-size: 3rem;
+        background: transparent;
+        border: none;
+        color: white;
+        position: absolute;
+        z-index: 1;
+      }
+    }
+    .cont {
+      width: 70%;
+      height: 40%;
+      border-radius: 3px;
+      margin: 30px;
+
+      h2 {
+        font-family: "Press Start 2P", cursive;
+        font-size: 1.5em;
+        text-align: center;
+        color: white;
+        position: relative;
+        margin-bottom: 3%;
+        margin-top: 0%;
+      }
+      .bar:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      .bar {
+        width: 100%;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        //box-shadow: inset 0px 0px 5px #2c2c2c, inset -0px -0px 5px #5c5c5c;
+      }
+      .bar-stat {
+        border-radius: 5px;
+        text-shadow: 0 0 5px #000;
+        .bar-text {
+          font-family: "Merienda", cursive;
+          font-size: 18px;
+          text-align: start;
+          text-shadow: 0px 0px 0px;
+          color: rgb(255, 255, 255);
+        }
+        #html {
+          padding: 8px 20px;
+          background: #7d7d7d;
+          animation: htmlSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+        }
+        #css {
+          padding: 8px 20px;
+          background: #7d7d7d;
+          animation: cssSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+        }
+        #js {
+          padding: 8px 20px;
+          background: #7d7d7d;
+          animation: jsSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+        }
+        #ja {
+          padding: 8px 20px;
+          background: #7d7d7d;
+          animation: jaSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+        }
+        #sql {
+          padding: 8px 20px;
+          background: #7d7d7d;
+          animation: sqlSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+        }
+        #db {
+          padding: 8px 20px;
+          background: #7d7d7d;
+          animation: dbSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+        }
+        #ec {
+          padding: 8px 20px;
+          background: #7d7d7d;
+          animation: ecSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+        }
+        #vsc {
+          padding: 8px 20px;
+          background: #7d7d7d;
+          animation: vscSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+        }
+        #as {
+          padding: 8px 20px;
+          background: #7d7d7d;
+          animation: asSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+        }
+        #in {
+          padding: 8px 20px;
+          background: #7d7d7d;
+          animation: inSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+        }
+      }
+    }
+  }
+}
+
+//Animation progressBar
+@keyframes htmlSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes cssSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes jsSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes jaSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes sqlSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes dbSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes ecSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes vscSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes asSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes inSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .pg {
+    height: 100%;
+    .row {
+      flex-direction: column;
+    }
+  }
+}

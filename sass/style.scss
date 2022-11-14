@@ -1,0 +1,128 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  body {
+    width: 100%;
+    height: 100%;
+    background: #0d0d28;
+    perspective: 1000px;
+    position: fixed;
+    transform-style: preserve-3d;
+    .presentation {
+      display: flex;
+      justify-content: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      h1 {
+        font-family: "Press Start 2P", cursive;
+        font-size: 2rem;
+        margin-top: 3%;
+        color: white;
+        text-align: center;
+      }
+      h2 {
+        font-size: 1rem;
+        color: white;
+        text-align: center;
+        font-family: "Press Start 2P", cursive;
+        margin-bottom: 3%;
+      }
+    }
+
+    #drag,
+    #spin {
+      height: 100%;
+      position: relative;
+      align-items: center;
+      display: flex;
+      margin: auto;
+      transform-style: preserve-3d;
+      transform: rotateX(-10deg);
+      #carouselImage {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        img {
+          width: 200%;
+        }
+      }
+      p {
+        // border: 2px solid white;
+        color: white;
+        font-size: 1.3rem;
+        transform-style: preserve-3d;
+        position: absolute;
+        font-family: "Press Start 2P", cursive;
+        width: 100%;
+        height: 30%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      p:hover {
+        text-shadow: 0 0 15px #fffd;
+        -webkit-box-reflect: below 10px
+          linear-gradient(transparent, transparent, #0007);
+      }
+      #ground {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotateX(90deg);
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        outline: none;
+      }
+    }
+    #aPropos {
+      display: none;
+    }
+    #competence {
+      display: none;
+    }
+    #parcours {
+      display: none;
+    }
+    #loisirs {
+      display: none;
+    }
+    #infos {
+      display: none;
+    }
+    #experiences {
+      display: none;
+    }
+  }
+}
+html,
+body {
+  height: 100%;
+}
+
+// Bouton retour -------------------------------------------------------------------------------------
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes spinRevert {
+  from {
+    transform: rotateY(360deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}

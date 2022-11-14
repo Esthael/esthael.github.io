@@ -1,0 +1,52 @@
+#parcours {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  .container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .btn {
+      width: 100%;
+      .btnRetour {
+        cursor: pointer;
+        font-size: 3rem;
+        background: transparent;
+        border: none;
+        color: white;
+        position: absolute;
+      }
+    }
+
+    .texte {
+      // border: 2px solid white;
+      width: 100%;
+      height: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      h6 {
+        border: 2px solid white;
+        width: 30%;
+        height: 60%;
+        color: white;
+        font-size: 1.5rem;
+        font-family: "Merienda", cursive;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        // padding: 5%;
+      }
+    }
+  }
+}
+

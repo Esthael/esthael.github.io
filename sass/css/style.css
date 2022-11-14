@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+* body {
+  width: 100%;
+  height: 100%;
+  background: #0d0d28;
+  perspective: 1000px;
+  position: fixed;
+  transform-style: preserve-3d;
+}
+* body .presentation {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+* body .presentation h1 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  margin-top: 3%;
+  color: white;
+  text-align: center;
+}
+* body .presentation h2 {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  margin-bottom: 3%;
+}
+* body #drag,
+* body #spin {
+  height: 100%;
+  position: relative;
+  align-items: center;
+  display: flex;
+  margin: auto;
+  transform-style: preserve-3d;
+  transform: rotateX(-10deg);
+}
+* body #drag #carouselImage,
+* body #spin #carouselImage {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+* body #drag #carouselImage img,
+* body #spin #carouselImage img {
+  width: 200%;
+}
+* body #drag p,
+* body #spin p {
+  color: white;
+  font-size: 1.3rem;
+  transform-style: preserve-3d;
+  position: absolute;
+  font-family: "Press Start 2P", cursive;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+* body #drag p:hover,
+* body #spin p:hover {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8666666667);
+  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4666666667));
+}
+* body #drag #ground,
+* body #spin #ground {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(90deg);
+}
+* body #drag a,
+* body #spin a {
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+* body #aPropos {
+  display: none;
+}
+* body #competence {
+  display: none;
+}
+* body #parcours {
+  display: none;
+}
+* body #loisirs {
+  display: none;
+}
+* body #infos {
+  display: none;
+}
+* body #experiences {
+  display: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@-webkit-keyframes spinRevert {
+  from {
+    transform: rotateY(360deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes spinRevert {
+  from {
+    transform: rotateY(360deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
